@@ -4,30 +4,61 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="Asset/symbole.png" />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <header>
+      <nav aria-label="Menu principal">
+        <a class="btn" href="index.html">Accueil</a>
+        <a class="btn" href="prestation.html">Prestations</a>
+        <a class="btn" href="avis.html">Avis</a>
+        <a class="btn" href="contact.html">Contact</a>
+        <a class="btn" href="apropos.html">À propos</a>
+        <a class="btn" href="Mentions%20Légales/ml.html">Mentions</a>
+      </nav>
       <h1>Contact</h1>
       <p>
         Une question ou envie de prendre rendez-vous ? N’hésitez pas à me
         contacter, je vous répondrai dans les plus brefs délais.
       </p>
     </header>
-    <p><form action="/ma-page-de-traitement" method="post">
-  <ul>
-    <li>
-      <label for="name">Nom&nbsp;:</label>
-      <input type="text" id="name" name="user_name" />
-    </li>
-    <li>
-      <label for="mail">E-mail&nbsp;:</label>
-      <input type="email" id="mail" name="user_mail" />
-    </li>
-    <li>
-      <label for="msg">Message&nbsp;:</label>
-      <textarea id="msg" name="user_message"></textarea>
-    </li>
-  </ul>
-</form></p>
+    <form action="/ma-page-de-traitement" method="post">
+      <ul>
+        <li>
+          <label for="name">Nom&nbsp;:</label>
+          <input
+            type="text"
+            id="name"
+            name="user_name"
+            placeholder="Votre nom"
+            required
+          />
+        </li>
+
+        <li>
+          <label for="mail">E-mail&nbsp;:</label>
+          <input
+            type="email"
+            id="mail"
+            name="user_mail"
+            placeholder="votre@email.com"
+            required
+          />
+        </li>
+        <li>
+          <label for="msg">Message&nbsp;:</label>
+          <textarea
+            id="msg"
+            name="user_message"
+            rows="6"
+            placeholder="Écrivez votre message…"
+            required
+          ></textarea>
+        </li>
+      </ul>
+      <button type="submit">Envoyer</button>
+    </form>
   </body>
 </html>
